@@ -3,7 +3,7 @@ import Display from '../components/Display.jsx'
 import Panel from '../components/Panel.jsx'
 import '../styles/calculator.css'
 
-export default function Calculator () {
+export default function Calculator() {
   const [current, setCurrent] = useState('')
   const [previous, setPrevious] = useState('')
   const [operator, setOperatorValue] = useState('')

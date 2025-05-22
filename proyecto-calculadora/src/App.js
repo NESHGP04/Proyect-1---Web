@@ -1,6 +1,5 @@
-import logo from './logo.svg';
-import './styles/App.css';
-import Calculator from './pages/Calculator.jsx';
+import './styles/App.css'
+import Calculator from './pages/Calculator.jsx'
 
 function App() {
   return (
@@ -10,4 +9,4 @@ function App() {
   )
 }
 
-export default App;
+export default App

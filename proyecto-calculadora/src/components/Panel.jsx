@@ -1,7 +1,6 @@
-import React from 'react'
 import Button from './Button.jsx'
 
-export default function Panel ({ onAppend, onOperator, onCalculate, onClear }) {
+export default function Panel ({onAppend, onOperator, onCalculate, onClear}) {
   return (
     <div className='buttons'>
       {['7', '8', '9'].map(n => <Button key={n} label={n} onClick={() => onAppend(n)} />)}
