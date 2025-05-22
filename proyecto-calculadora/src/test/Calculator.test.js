@@ -21,3 +21,12 @@ test('debe limpiar el display', () => {
   fireEvent.click(screen.getByText('C'))
   expect(screen.getByRole('textbox').value).toBe('')
 })
+
+test('debe mostrar ERROR al dividir entre cero', () => {
+  render(<Calculator />)
+  fireEvent.click(screen.getByText('8'))
+  fireEvent.click(screen.getByText('÷'))
+  fireEvent.click(screen.getByText('0'))
+  fireEvent.click(screen.getByText('='))
+  expect(screen.getByRole('textbox').value).toBe('ERROR')
+})
